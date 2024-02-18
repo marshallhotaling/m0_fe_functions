@@ -8,23 +8,24 @@
 
 
 // EX 1:
-function askForName() { console.log("Hello, what is your name?") }
+function askForName() { 
+  return "hello, what is your name?"
+}
 
-askForName()
-
-
+console.log(askForName())
+// I had to console.log to see the outcome and make it look more formal 
 // EX 2:
 function addThreeNums(first, second, third) {
-var sum = first + second + third
-return sum;
-      }
+  return first + second + third; 
+ }
 
-addThreeNums(1, 2, 3);
-addThreeNums(4, 2, 7);
+console.log("1+2+3 = ",addThreeNums(1, 2, 3));
+console.log("4+2+7 = ", addThreeNums(4, 2, 7));
+// I had to remove the var because the return dose the same thing and I added a discription to tell you what your adding 
 
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
@@ -32,13 +33,18 @@ func makeFreshPesto(){
   console.log("Season");    }
 
 makeFreshPesto();
-
+// there relly is nothing I can do to this uther then compleat the whole function  
 
 //  EX 4:
 function average(num1, num2) 
   {
+
 var sum = num1 + num2;
+
     var avg = sum / 2;
 
 return avg
   }
+
+  console.log("Average of 10 and 20 = ", average(10, 20))
+  // This is anuther console log with the average and a discription of what averege 

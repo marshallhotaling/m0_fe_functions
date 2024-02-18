@@ -6,16 +6,15 @@
 // The toLowerCase() method is called on the string "Hello World"
 // No arguments are passed; toLowerCase() has one clear job which is to lowercase all letters that exist in the String
 // The return value is "hello world"
-"Hello World".toLowerCase();
+console.log ("Hello World".toLowerCase());
 
+// uses inculde to chek if the string has that value 
+console.log ("Hello World".includes("Hello"));
 
-"Hello World".includes("Hello");
-
-
-"Hello World".endsWith("Hello");
-
-
-"Hello World".endsWith("rld");
+// uses endsWith to chek what the string ends with the assind name  
+console.log ("Hello World".endsWith("Hello"));
+// this dose the same thing but it comes out true because the string ends with rld 
+console.log ("Hello World".endsWith("rld"));
 
 
 
@@ -31,6 +30,7 @@
 // In this example, the return value is true, because "Jeff" does start with "J".
 // The console.log() statements prints the return value of the startsWith() method (true) to the console.
 var firstName = "Jeff";
+// this tells us what jeff starts with 
 console.log(firstName.startsWith("J"));
 
 
@@ -40,3 +40,9 @@ console.log(firstName.startsWith("J"));
 // Call a different built-in JavaScript method on each of your variables. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
+var firstName = "Marshall"
+var lastName = "Hotaling"
+// This is telling us if firstName starts with m witch its true 
+console.log (firstName.startsWith("M"));
+// This is telling us if lastName ends with ing and in this case its true 
+console.log  (lastName.endsWith ("ing"));
